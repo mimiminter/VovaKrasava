@@ -1,0 +1,78 @@
+﻿<Window x:Class="Mukha_otrezki_praktika.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Отрезки" Height="880" Width="1050" Background="AliceBlue" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" >
+    <Grid x:Name="grid" Margin="0,0,0,-19" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="105*"/>
+            <RowDefinition Height="466*"/>
+        </Grid.RowDefinitions>
+        <Canvas  x:Name="Canvas" HorizontalAlignment="Left" Height="400" Width="500" Margin="482,121,0,170"  RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2" >
+            <Canvas>
+                <Line X1="250" Y1="380" X2="250" Y2="0" Margin="0,10,0,0" Stroke="Black" StrokeThickness="2" />
+                <Line X1="480" Y1="200" X2="0" Y2="200" Margin="10,0,0,0" Stroke="Black" StrokeThickness="2"/>
+            </Canvas>
+        </Canvas>
+        <TextBlock Text="   Начало отрезка" FontSize="20" HorizontalAlignment="Left" Margin="20,61,0,12" Width="181"/>
+        <TextBlock Text="   Конец отрезка" FontSize="20" HorizontalAlignment="Left" Margin="246,61,0,12" RenderTransformOrigin="1.188,1.2" Width="167"/>
+        <Label Content="X" HorizontalAlignment="Left" Margin="20,93,0,0" VerticalAlignment="Top" FontSize="15" Width="34" HorizontalContentAlignment="Center" Grid.RowSpan="2"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="20,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="34" RenderTransformOrigin="-0.023,-0.478" Grid.Row="1"/>
+        <Label Content="X" HorizontalAlignment="Left" Margin="246,93,0,0" VerticalAlignment="Top" FontSize="15" Width="34" HorizontalContentAlignment="Center" Grid.RowSpan="2"/>
+        <TextBox x:Name="x1_2" HorizontalAlignment="Left" Height="23" Margin="246,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="34" RenderTransformOrigin="-0.023,-0.478" Grid.Row="1"/>
+        <Label Content="Y" HorizontalAlignment="Left" Margin="379,93,0,0" VerticalAlignment="Top" FontSize="15" Width="34" HorizontalContentAlignment="Center" Grid.RowSpan="2"/>
+        <TextBox x:Name="y1_2" HorizontalAlignment="Left" Height="23" Margin="379,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="34" RenderTransformOrigin="-0.023,-0.478" Grid.Row="1"/>
+        <Label Content="X" HorizontalAlignment="Left" Margin="20,93,0,0" VerticalAlignment="Top" FontSize="15" Width="34" HorizontalContentAlignment="Center" Grid.RowSpan="2"/>
+        <TextBox x:Name="x1_1" HorizontalAlignment="Left" Height="23" Margin="20,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="34" RenderTransformOrigin="-0.023,-0.478" Grid.Row="1"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="167,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="34" RenderTransformOrigin="-0.023,-0.478" Grid.Row="1"/>
+        <Label Content="Y" HorizontalAlignment="Left" Margin="167,93,0,0" VerticalAlignment="Top" FontSize="15" Width="34" HorizontalContentAlignment="Center" Grid.RowSpan="2"/>
+        <TextBox x:Name="y1_1" HorizontalAlignment="Left" Height="23" Margin="167,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="34" RenderTransformOrigin="-0.023,-0.478" Grid.Row="1" />
+        <Button Content="Очистить" HorizontalAlignment="Left" Margin="831,455,0,0" Grid.Row="1" VerticalAlignment="Top" Width="112" Height="35" Background="AntiqueWhite" Click="Button_Click_Clear"/>
+        <Label Content="Отрезок 1" HorizontalAlignment="Left" Margin="20,10,0,0" VerticalAlignment="Top" Width="393" Height="46" FontSize="25" HorizontalContentAlignment="Center"/>
+        <Button Content="Создать" HorizontalAlignment="Left" Margin="167,68,0,0" Grid.Row="1" VerticalAlignment="Top" Width="113" Height="36" Background="AntiqueWhite" Click="Button_Add_1"/>
+        <TextBlock Text="   Начало отрезка" FontSize="20" HorizontalAlignment="Left" Margin="20,177,0,420" Width="181" Grid.Row="1"/>
+        <TextBlock Text="   Конец отрезка" FontSize="20" HorizontalAlignment="Left" Margin="246,177,0,420" RenderTransformOrigin="1.188,1.2" Width="167" Grid.Row="1"/>
+        <Label Content="X" HorizontalAlignment="Left" Margin="20,209,0,0" VerticalAlignment="Top" FontSize="15" Width="34" HorizontalContentAlignment="Center" Grid.Row="1"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="20,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="34" RenderTransformOrigin="-0.023,-0.478" Grid.Row="1"/>
+        <Label Content="X" HorizontalAlignment="Left" Margin="246,209,0,0" VerticalAlignment="Top" FontSize="15" Width="34" HorizontalContentAlignment="Center" Grid.Row="1"/>
+        <TextBox x:Name="x2_2" HorizontalAlignment="Left" Height="24" Margin="246,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="34" RenderTransformOrigin="-0.023,-0.478" Grid.Row="1"/>
+        <Label Content="Y" HorizontalAlignment="Left" Margin="379,209,0,0" VerticalAlignment="Top" FontSize="15" Width="34" HorizontalContentAlignment="Center" Grid.Row="1"/>
+        <TextBox x:Name="y2_2" HorizontalAlignment="Left" Height="24" Margin="379,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="34" RenderTransformOrigin="-0.023,-0.478" Grid.Row="1"/>
+        <Label Content="X" HorizontalAlignment="Left" Margin="20,209,0,0" VerticalAlignment="Top" FontSize="15" Width="34" HorizontalContentAlignment="Center" Grid.Row="1"/>
+        <TextBox x:Name="x2_1" HorizontalAlignment="Left" Height="24" Margin="20,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="34" RenderTransformOrigin="-0.023,-0.478" Grid.Row="1"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="167,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="34" RenderTransformOrigin="-0.023,-0.478" Grid.Row="1"/>
+        <Label Content="Y" HorizontalAlignment="Left" Margin="167,209,0,0" VerticalAlignment="Top" FontSize="15" Width="34" HorizontalContentAlignment="Center" Grid.Row="1"/>
+        <TextBox x:Name="y2_1" HorizontalAlignment="Left" Height="24" Margin="167,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="34" RenderTransformOrigin="-0.023,-0.478" Grid.Row="1"/>
+        <Label Content="Отрезок 2" HorizontalAlignment="Left" Margin="20,125,0,0" VerticalAlignment="Top" Width="393" Height="46" FontSize="25" HorizontalContentAlignment="Center" Grid.Row="1"/>
+        <Button Content="Создать" HorizontalAlignment="Left" Margin="167,289,0,0" Grid.Row="1" VerticalAlignment="Top" Width="113" Height="36" Background="AntiqueWhite" Click="Button_Add_2"/>
+        <Button Content="Пересечение" HorizontalAlignment="Left" Margin="678,455,0,0" Grid.Row="1" VerticalAlignment="Top" Width="112" Height="35" Background="AntiqueWhite" Click="Button_Click_Peresecheniye" RenderTransformOrigin="0.589,0.429"/>
+        <Button Content="Определить угол" HorizontalAlignment="Left" Margin="168,480,0,0" Grid.Row="1" VerticalAlignment="Top" Width="112" Height="35" Background="AntiqueWhite" Click="Button_Click_Ugol"/>
+        <TextBlock Text=" Угол первого отрезка" FontSize="20" HorizontalAlignment="Left" Margin="10,400,0,196" Width="215" Grid.Row="1"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="56,438,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="111" RenderTransformOrigin="-0.023,-0.478" Grid.Row="1" x:Name="ugol_1"/>
+        <Label Content="Угол отрезков" HorizontalAlignment="Left" Margin="20,348,0,0" VerticalAlignment="Top" Width="393" Height="46" FontSize="25" HorizontalContentAlignment="Center" Grid.Row="1"/>
+        <Button Content="Точки пересечения" HorizontalAlignment="Left" Margin="523,455,0,0" Grid.Row="1" VerticalAlignment="Top" Width="112" Height="35" Background="AntiqueWhite" Click="Button_Click_Tochka_Peresecheniya" RenderTransformOrigin="0.335,0.586"/>
+        <TextBlock Text="  Угол второго отрезка" FontSize="20" HorizontalAlignment="Left" Margin="256,400,0,196" Width="215" Grid.Row="1"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="302,438,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="111" RenderTransformOrigin="-0.023,-0.478" Grid.Row="1" x:Name="ugol_2"/>
+        <Button Content="Повернуть отрезок" HorizontalAlignment="Left" Margin="321,599,0,0" Grid.Row="1" VerticalAlignment="Top" Width="112" Height="35" Background="AntiqueWhite" Click="Button_Click_Povorot"/>
+        <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="0,568,0,63" Width="147" Grid.Row="1"><Run Text="          "/><Run Text="Введите "/><Run Text="X"/></TextBlock>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="81,599,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="34" RenderTransformOrigin="-0.023,-0.478" Grid.Row="1" x:Name="x_povorot"/>
+        <Label Content="Поворот отрезка" HorizontalAlignment="Left" Margin="20,515,0,0" VerticalAlignment="Top" Width="393" Height="46" FontSize="25" HorizontalContentAlignment="Center" Grid.Row="1"/>
+        <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="152,566,0,64" Width="157" Grid.Row="1"><Run Text="          "/><Run Text="Введите "/><Run Text="Y"/></TextBlock>
+        <TextBox HorizontalAlignment="Left" Height="22" Margin="234,599,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="34" RenderTransformOrigin="-0.023,-0.478" Grid.Row="1" x:Name="y_povorot"/>
+        <TextBlock Margin="45,643,860,30" Grid.Row="1" Text="Введите угол" FontSize="20"></TextBlock>
+        <TextBox HorizontalAlignment="Left" Height="22" Margin="205,651,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104" RenderTransformOrigin="-0.023,-0.478" Grid.Row="1" x:Name="ugol_povorot"/>
+        <Label Content="Деление отрезка" HorizontalAlignment="Left" Margin="536,515,0,0" VerticalAlignment="Top" Width="393" Height="46" FontSize="25" HorizontalContentAlignment="Center" Grid.Row="1"/>
+        <Label Content="B" HorizontalAlignment="Left" Margin="668,568,0,0" VerticalAlignment="Top" Width="55" Height="46" FontSize="25" HorizontalContentAlignment="Center" Grid.Row="1" RenderTransformOrigin="0.497,0.71"/>
+        <Label Content="A" HorizontalAlignment="Left" Margin="591,568,0,0" VerticalAlignment="Top" Width="55" Height="46" FontSize="25" HorizontalContentAlignment="Center" Grid.Row="1"/>
+        <Label Content="C" HorizontalAlignment="Left" Margin="745,568,0,0" VerticalAlignment="Top" Width="56" Height="46" FontSize="25" HorizontalContentAlignment="Center" Grid.Row="1" RenderTransformOrigin="0.497,0.71"/>
+        <TextBox HorizontalAlignment="Left" Height="22" Margin="601,612,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="34" RenderTransformOrigin="-0.023,-0.478" Grid.Row="1" x:Name="A_deleniye"/>
+        <TextBox HorizontalAlignment="Left" Height="22" Margin="678,612,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="34" RenderTransformOrigin="-0.023,-0.478" Grid.Row="1" x:Name="B_deleniye"/>
+        <TextBox HorizontalAlignment="Left" Height="22" Margin="756,612,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="34" RenderTransformOrigin="-0.023,-0.478" Grid.Row="1" x:Name="C_deleniye"/>
+        <Button Content="Разделить" HorizontalAlignment="Left" Margin="678,639,0,0" Grid.Row="1" VerticalAlignment="Top" Width="112" Height="35" Background="AntiqueWhite" Click="Button_Click_Razdelit"/>
+        <Label Content="D" HorizontalAlignment="Left" Margin="820,568,0,0" VerticalAlignment="Top" Width="56" Height="46" FontSize="25" HorizontalContentAlignment="Center" Grid.Row="1" RenderTransformOrigin="0.497,0.71"/>
+        <TextBox HorizontalAlignment="Left" Height="22" Margin="831,612,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="34" RenderTransformOrigin="-0.023,-0.478" Grid.Row="1" x:Name="D_deleniye"/>
+
+    </Grid>
+</Window>

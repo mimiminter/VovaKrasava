@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mukha_otrezki_praktika", "Mukha_otrezki_praktika.csproj", "{6A60F030-1B95-4B27-AC91-C257DFE7FD99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mukha_otrezki_testirovaniye", "..\Mukha_otrezki_testirovaniye\Mukha_otrezki_testirovaniye.csproj", "{BB732B12-10AD-4B7B-9EA6-860CCEED51CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A60F030-1B95-4B27-AC91-C257DFE7FD99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A60F030-1B95-4B27-AC91-C257DFE7FD99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A60F030-1B95-4B27-AC91-C257DFE7FD99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A60F030-1B95-4B27-AC91-C257DFE7FD99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB732B12-10AD-4B7B-9EA6-860CCEED51CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB732B12-10AD-4B7B-9EA6-860CCEED51CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB732B12-10AD-4B7B-9EA6-860CCEED51CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB732B12-10AD-4B7B-9EA6-860CCEED51CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F069A759-2106-40AC-B694-FAF4F8968EED}
+	EndGlobalSection
+EndGlobal
